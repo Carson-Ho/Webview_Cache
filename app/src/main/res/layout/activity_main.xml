@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.carson_ho.webview_demo.MainActivity">
+
+
+   <!-- 获取网站的标题-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <!--开始加载提示-->
+    <TextView
+        android:id="@+id/text_beginLoading"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <!--获取加载进度-->
+    <TextView
+        android:layout_below="@+id/text_beginLoading"
+        android:id="@+id/text_Loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <!--结束加载提示-->
+    <TextView
+        android:layout_below="@+id/text_Loading"
+        android:id="@+id/text_endLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""/>
+
+    <!--显示网页区域-->
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_below="@+id/text_endLoading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>
